@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    max-height: 350px;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 250px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+#estadoProduto{
+    border: 1px solid #ddd;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500; 
+}
+.card .card-product h2{
+    text-align: center;
+    overflow-x: scroll;
+    width: 250px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.card .card-product h2::-webkit-scrollbar {
+    display: none;
+}
+.card .card-price h4{
+    text-align: center;
+    overflow-x: scroll;
+    width: 250px;
+    font-size: 20px;
+    font-size: 400;
+    color: #040404;
+}
+.card .card-price h4::-webkit-scrollbar{
+    display: none;
+}
+.criar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0;
+    gap: 20px;
+}
+.criar button{
+    padding: 5px 30px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 3px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+.criar button:hover{
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.painel{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    /* visibility: hidden; */
+    height: auto;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding:20px;
+    transition: linear .1s;
+}
+.painel input{
+    padding: 8px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ocultar{
+    visibility: visible;
+    transition: all ease-in .4s;
+}
+fieldset{
+    display: flex;
+    gap: 10px;
+    padding:10px 0;
+    border: none;
+}

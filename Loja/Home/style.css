@@ -1,5 +1,5 @@
 /*Font Montserrat*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 /*Icons BootStrap*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 *{
@@ -8,204 +8,118 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 :root{
-    --Fundo:#171717;
+    --Fundo:#080B16;
+    --FontMenuLateral:#E9EEF8;
+    --fundoMenuConta:#11182F;
 }
-body{
+html{
     background: var(--Fundo);
 }
-body.fundoBlack{
-    background: #000;
+header{
+    position: absolute;
+    height: 100vh;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid yellow;
 }
-.container-menu{
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    color: yellow;
+    padding: 40px 20px;
+}
+.menu-options ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-options i{
+    padding-right: 7px;
+}
+.menu-options a{
+    font-size: 18px;
+    color: var(--FontMenuLateral);
+    font-weight: 400;
+}
+.menu-logo{
+    padding-bottom: 40px;
+}
+.menu-logo h2{
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+}
+hr{
+    margin: 40px 0;
+    width: 50%;
+    border: 1px solid #f9f9f9;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social h3{
+    color: #fff;
+    padding-right: 15px;
+}
+.social ul{
+    display: flex;
+    gap: 10px;
+}
+.social a{
+    color: #fff;
+    font-size: 22px;
+}
+.social li{
+    color: red;
+}
+.social a:hover{
+    text-decoration: underline;
+}
+.conta{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
-    height: 10vh;
-    width: 100%;
-    background: var(--Fundo);
-}
-.logo h1{
-    color: #fff;
-    font-size: 44px;
-    font-weight: 600;
-}
-.menu ul{
-    display: flex;
-    gap: 10px;
-}
-.menu a{
-    color: #f9f9f9;
-    font-weight: 500;
-    font-size: 16px;
-}
-/*Card Product*/
-.card-product{
-    display: grid;
-    place-items: center;
-    height: 460px auto;
-    width: 250px;
-    padding-bottom: 20px;
-    background: #f9f9f9;
-    margin: 20px;
+    background: var(--fundoMenuConta);
+    width: 224px;
+    height: 70px;
     border-radius: 12px;
+    padding: 12px;
 }
-.card-product img{
+.img-conta{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.foto-perfil{
+    height: 42px;
+    width: 42px;
+}
+.foto-perfil img{
+    height: 100%;
     width: 100%;
-    border-radius: 12px 12px 0px 0px;
-}
-.card-product h4{
-    padding: 10px 0 ;
-    color: #000;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 600;
-}
-.card-product button{
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    outline: none;
-    border-top: 0;
-    border-left: 3px solid #ddd;
-    border-right: 5px solid #ddd;
-    border-bottom: 8px solid #ddd;
-    cursor: pointer;
-    transition: all .4s ease;
-}
-.card-product button:hover{
-    outline: none;
-    transition: all .2s ease;
-    border: 1px solid #ddd;
-}
-/*Carrinho*/
-.seta_cart{
-    position: absolute;
-    top: 75px;
-    float: left;
-    right: 79.8px;
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid #fff;
-}
-.carrinho{
-    position: absolute;
-    top: 90px;
-    float: right;
-    right: 80px;
-    height: 400px;
-    width: 250px;
-    background: #fff;
-}
-#notification{
-    position: absolute;
-    right: 58px;
-    top: 10px;
-    background: #fff;
-    visibility: hidden;
-    padding: 5px;
+    object-fit: cover;
     border-radius: 50px;
-    font-size: 16px;
+}
+.nome-perfil{
+    display: flex;
+    flex-direction: column;
+}
+.nome-perfil h4{
     font-weight: 500;
-    color: #000;
+    color: #fff;
 }
-#notificar.menucart{
-    height: 400px;
-    width: 250px;
-    background: red;
+.nome-perfil span{
+    color: #64748B;
 }
-/*Footer*/
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #000;
-    border-top: 1px solid #f9f9f9;
-}
-.container-footer{
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    padding: 50px 50px;
-    background: #000;
-    border-radius: 12px 12px  0 0;
-}
-.footer-logo{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-.footer-logo h1{
-    font-size: 44px;
-    text-transform: uppercase;
+.config-conta span{
     color: #fff;
     font-weight: 600;
-}
-.footer-logo h4{
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400;
-}
-.footer-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.footer-menu h2{
-    color: #fff;
-    font-size: 36px;
-    font-weight: 600;
-}
-.footer-menu ul{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.footer-menu li{
-    padding: 3px 0;
-}
-.footer-menu a{
-    color: #f9f9f9;
-    font-size: 16px;
-    font-weight: 500;
-}
-.footer-social{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-.footer-social h2{
-    font-size: 36px;
-    color: #fff;
-    font-weight: 600;
-}
-.footer-social ul{
-    display: flex;
-    gap: 10px;
-}
-.footer-social i{
-    font-size: 20px;
-    color: #fff;
-}
-.container-footer-direitos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid #fff;
-    height: 5vh;
-    width: 60%;
-    background: #000;
-}
-.container-footer-direitos span{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
 }
