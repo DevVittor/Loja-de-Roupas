@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+}
+html{
+    background: var(--Fundo);
+}
+header{
+    height: 100vh;
+    max-height: 100vh;
+    width: 20%;
+    padding: 20px;
+    background:var(--Fundo);
+    border-right: 2px solid var(--fundoMenuConta);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    color: yellow;
+    padding: 40px 20px;
+}
+.menu-options ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-options i{
+    padding-right: 7px;
+}
+.menu-options a{
+    font-size: 18px;
+    color: var(--FontMenuLateral);
+    font-weight: 400;
+}
+.menu-logo{
+    padding-bottom: 40px;
+}
+.menu-logo h2{
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+}
+hr{
+    margin: 40px 0;
+    width: 50%;
+    border: 1px solid #f9f9f9;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social h3{
+    color: #fff;
+    padding-right: 15px;
+}
+.social ul{
+    display: flex;
+    gap: 10px;
+}
+.social a{
+    color: #fff;
+    font-size: 22px;
+}
+.social li{
+    color: red;
+}
+.social a:hover{
+    text-decoration: underline;
+}
+.conta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--fundoMenuConta);
+    width: 224px;
+    height: 70px;
+    border-radius: 12px;
+    padding: 12px;
+}
+.img-conta{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.foto-perfil{
+    height: 42px;
+    width: 42px;
+}
+.foto-perfil img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.nome-perfil{
+    display: flex;
+    flex-direction: column;
+}
+.nome-perfil h4{
+    font-weight: 500;
+    color: #fff;
+}
+.nome-perfil span{
+    color: #64748B;
+}
+.config-conta span{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*Main*/
+main{
+    width: 80%;
+}
+.container-contents{
+    height: 100vh;
+    width: 80%;
+}

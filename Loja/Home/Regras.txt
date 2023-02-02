@@ -1,0 +1,6 @@
+Se a pessoa não tiver feito o login com uma conta maior de 18 anos ela não vai consegui criar uma conta e avisar o porque
+2º Se a pessoa não tiver feito o login e for acessar o site vai aparecer o popup perguntando se é maior de 18 anos 
+3º se a pessoa não tiver feito o login no site ela vai consegui acessar tudo ilimitadamente, mas na parte de pessoas ela vai tiver
+apenas 30 segundos de visualização, porque depois vai aparecer um popup exigindo o login ou a criação de uma conta no site
+4º Na parte de verificar conta se a pessoa pagou, assim que o pagamento for feito vai mudar a tela para um cronometro 
+que vai retroceder até o zero, exemplo pagou 30 dias, vai aparecer 29 dias de selo de verificado

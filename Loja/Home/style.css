@@ -14,73 +14,138 @@
     --Fundo:#080B16;
     --FontMenuLateral:#E9EEF8;
     --fundoMenuConta:#11182F;
+    --ColorLogo: #FFEA20;
+    --CorBranca:#fff;
+    --FundoContentCard:#080B16;
+    --CorIconVerificado: #38E54D;
+    --CorIconVerificado2: #2192FF;
 }
-html{
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 95vh;
+    width: 100vw;
     background: var(--Fundo);
 }
-header{
-    position: absolute;
-    height: 100vh;
-    width: 400px;
-    padding: 20px;
-    border: 1px solid yellow;
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 15vw;
+    padding: 40px;
+    border-right: 2px solid var(--fundoMenuConta);
+}
+.menu-navegation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-navegation h2{
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    width: 100%;
+    color: var(--ColorLogo);
+    padding-bottom: 20px;
+}
+.menu-navegation li{
+    padding: 10px 0px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+.menu-navegation i{
+    padding-right: 10px;
+}
+.menu-navegation a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 40px;
+}
+#menuHover{
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    padding: 8px 40px;
+    border-radius: 3px;
+    color: #0014FF;
+}
+/*.page_atual{
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    padding: 8px 40px;
+    border-radius: 3px;
+    color: #0014FF;
+}*/
+.container-content{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    width: 85vw;
 }
 .menu{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    color: yellow;
-    padding: 40px 20px;
+    align-items: center;
+    color: #fff;
+    padding:0 80px ;
 }
-.menu-options ul{
+.resultados{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
 }
-.menu-options i{
-    padding-right: 7px;
+.resultados h1{
+    text-transform: capitalize;
+    color: #fff;
+    font-size:36px;
+    font-weight: 600;
 }
-.menu-options a{
+.resultados h4{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.Search{
+    display: flex;
+    align-items: center;
+}
+.Search i{
+    display: block;
+    padding-right: 10px;
+    font-weight: 600;
     font-size: 18px;
-    color: var(--FontMenuLateral);
+    cursor: pointer;
+}
+.Search input{
+    display: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 20px;
+    outline: none;
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 16px;
     font-weight: 400;
 }
-.menu-logo{
-    padding-bottom: 40px;
+.filtrar select{
+    padding: 5px 10px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
 }
-.menu-logo h2{
-    font-size: 44px;
-    font-weight: 600;
-    text-align: center;
-}
-hr{
-    margin: 40px 0;
-    width: 50%;
-    border: 1px solid #f9f9f9;
-}
-.social{
+.menu-account{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
 }
-.social h3{
-    color: #fff;
-    padding-right: 15px;
-}
-.social ul{
-    display: flex;
-    gap: 10px;
-}
-.social a{
-    color: #fff;
-    font-size: 22px;
-}
-.social li{
-    color: red;
-}
-.social a:hover{
-    text-decoration: underline;
+.menu{
+    height: 10vh;
+    border-bottom: 2px solid var(--fundoMenuConta);
 }
 .conta{
     display: flex;
@@ -122,4 +187,178 @@ hr{
     color: #fff;
     font-weight: 600;
     font-size: 18px;
+}
+.menu-open-style i{
+    padding: 5px;
+}
+.menu-open-style i:hover{
+    background: #404774;
+    padding: 5px;
+    border-radius: 5px;
+}
+.conta-menu{
+    position: absolute;
+    visibility: hidden;
+    padding: 10px 20px;
+    bottom: 145px;
+    left: 222px;
+    background: #fff;
+    border-radius: 5px 5px 5px 0px;
+}
+.menu_visible{
+    visibility: visible;
+}
+.conta-menu li{
+    padding: 3px 0;
+}
+.conta-menu a{
+    color: #000;
+}
+.conta-menu a:hover{
+    color: #0014FF;
+}
+.conta-menu i{
+    padding-right: 5px;
+    color: #000;
+}
+#hover_delete:hover{
+    color: #CF0A0A;
+}
+.content{
+    height: 90vh;
+    overflow-y: auto;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+.content::-webkit-scrollbar {
+    width: 12px;/* width of the entire scrollbar */
+}
+.content::-webkit-scrollbar-track {
+    background: var(--Fundo);  /* color of the tracking area */
+}
+.content::-webkit-scrollbar-thumb {
+    background-color: var(--fundoMenuConta);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--CorBranca);  /* creates padding around scroll thumb */
+}
+.box-card{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 145px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 458px;
+    width: 305px;
+    background: #fff;
+    border-radius: 10px;
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/058/721/610/large/jpk-dike-6ad1287449d840388095be36cc339c86.jpg?1674816632");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.card:hover .card-box-content{
+    visibility: visible;
+}
+.card-box-price{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    align-items: center;
+    width: 100%;
+}
+.card_verificado{
+    font-size: 22px;
+    color: var(--CorIconVerificado2);
+}
+.card_verificado i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--CorBranca);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+.card_price{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+}
+.card_price span{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    background: #CF0A0A;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.card-box-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    visibility: hidden;
+    position: relative;
+    bottom: 10px;
+    height: 140px;
+    width: 92%;
+    background: var(--FundoContentCard);
+    border-radius: 12px;
+    padding:10px 20px;
+    transition: linear .1s;
+}
+.estado-genero{
+    display: flex;
+    justify-content: space-between;
+}
+.estado-genero span{
+    color: var(--CorBranca);
+    font-size: 16px;
+    font-weight: 500;
+}
+.estado-genero i{
+    padding-right: 5px;
+}
+.genero_card{
+    color: var(--CorBranca);
+    font-size: 16px;
+    font-weight: 500;
+}
+.card-desc p{
+    color: #f9f9f9;
+    font-size: 16px;
+    font-weight: 300;
+    height: 86.2px;
+    overflow-y: scroll;
+}
+.card-desc p::-webkit-scrollbar { 
+    display: none;
+  }
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--fundoMenuConta);
+    height: 5vh;
+    background: var(--Fundo);
+}
+.footer span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer b{
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
 }

@@ -1,0 +1,8 @@
+Card Vertical 
+H = 446px
+w = 305px
+
+Card Square 
+
+H = 305px
+W = 305px

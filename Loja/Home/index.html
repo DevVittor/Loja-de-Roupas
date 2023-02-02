@@ -5,52 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Abrime</title>
 </head>
 <body>
     
-    <header id="Menu-Horizontal">
-        <div class="menu">
-            <div class="menu-options">
-                <div class="menu-logo">
+   <div class="container">
+        <header>
+            <div class="container-menu">
+                <div class="menu-navegation">
                     <h2>Abrime</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="lin" id="menuHover"><i class="fa fa-home" aria-hidden="true"></i>Início</a></li>
+                            <li><a href="#" class="link"><i class="fa fa-users" aria-hidden="true"></i>Pessoas</a></li>
+                            <li><a href="#" class="link"><i class="fa fa-check-circle" aria-hidden="true"></i>Verificado</a></li>
+                            <li><a href="#" class="link"><i class="fa fa-rss" aria-hidden="true"></i>Blog</a></li>
+                            <li><a href="#" class="link"><i class="fa fa-building" aria-hidden="true"></i>Sobre</a></li>
+                            <li><a href="#" class="link"><i class="fa fa-question-circle" aria-hidden="true"></i>Ajuda</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#"><i class="bi bi-house"></i>Início</a></li>
-                        <li><a href="#"><i class="bi bi-layers"></i>Vagas</a></li>
-                        <li><a href="#"><i class="bi bi-clipboard2"></i>Blog</a></li>
-                        <li><a href="#"><i class="bi bi-hammer"></i>CLT</a></li>
-                    </ul>
-                </nav>
-                <hr>
-                <nav>
-                    <ul>
-                        <li><a href="#"><i class="bi bi-telephone-inbound"></i>Fale Conosco</a></li>
-                        <li><a href="#"><i class="bi bi-question-circle-fill"></i>Como Funciona</a></li>
-                        <li><a href="#"><i class="bi bi-info-circle-fill"></i>Quem Somos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="menu-conta">
-                <div class="conta">
-                    <div class="img-conta">
-                        <div class="foto-perfil">
-                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <div class="menu-account">
+                    <div class="conta">
+                        <div class="img-conta">
+                            <div class="foto-perfil">
+                                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                            </div>
+                            <div class="nome-perfil">
+                                <h4>Vittor</h4>
+                                <span id="id_user">8232</span>
+                            </div>
                         </div>
-                        <div class="nome-perfil">
-                            <h4>Vittor</h4>
-                            <span>#8232</span>
+                        <div class="config-conta">
+                            <span class="menu-open-style"><i class="fa fa-ellipsis-h" aria-hidden="true" id="open-menu"></i></span>
+                            <nav class="conta-menu">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Perfil</a></li>
+                                    <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Mensagens</a></li>
+                                    <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>Planos</a></li>
+                                    <li><a href="#" id="hover_delete"><i class="fa fa-trash" aria-hidden="true" style="color: #CF0A0A;"></i>Deletar Conta</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    <div class="config-conta">
-                        <span><i class="bi bi-three-dots"></i></span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-content">
+                <div class="menu">
+                    <div class="resultados">
+                        <h1>Vagas destacadas</h1>
+                        <h4>(1.234) Resultados</h4>
+                    </div>
+                    <div class="Search">
+                        <i class="fa fa-search" aria-hidden="true" id="icon_search"></i>
+                        <input type="search" name="" id="input_search" placeholder="Buscar Vaga">
+                        <div class="filtrar">
+                            <select name="" id="filtro">
+                                <option value=""select id="filtro_disabled">Filtros</option>
+                                <option value="">Teste</option>
+                                <option value="">Teste</option>
+                                <option value="">Teste</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="box-card">
+                        <div class="card">
+                            <div class="card-box-price">
+                                <div class="card_verificado">
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                </div>
+                                <div class="card_price">
+                                    <span>R$ 200/h</span>
+                                </div>
+                            </div>
+                            <div class="card-box-content">
+                                <div class="estado-genero">
+                                    <div class="estado_card">
+                                        <span><i class="fa fa-street-view" aria-hidden="true"></i>Rio de Janeiro</span>
+                                    </div>
+                                    <div class="genero_card">
+                                        <span><i class="fa fa-venus" aria-hidden="true"></i>Mulher</span>
+                                    </div>
+                                </div>
+                                <div class="card-desc">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, facere? Velit earum perferendis blanditiis totam, doloribus modi maiores tempore dolore?</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </main>
+   </div>
+
+    <footer>
+        <div class="footer">
+            <span>Todos os direitos reservados para <b>Abrime</b></span>
         </div>
-    </header>
+    </footer>
 
     <script src="code.js"></script>
+    
 </body>
 </html>
